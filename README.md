@@ -29,6 +29,10 @@ public class MainActivity extends ActionBarActivity {
 
 ```
 
+## Sample Application
+
+Sample app is available [here](https://deploygate.com/distributions/31a4a4398e40ec62ec5b5e65f3353d699827da30).
+
 ## Download
 
 Via gradle
