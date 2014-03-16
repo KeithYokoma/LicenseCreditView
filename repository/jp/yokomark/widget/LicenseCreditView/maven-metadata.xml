@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>jp.yokomark.widget</groupId>
-  <artifactId>AutoValidationEditText</artifactId>
+  <artifactId>LicenseCreditView</artifactId>
   <version>1.0.0</version>
   <versioning>
     <versions>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20140316081911</lastUpdated>
+    <lastUpdated>20140316082029</lastUpdated>
   </versioning>
 </metadata>

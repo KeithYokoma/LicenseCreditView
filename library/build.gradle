@@ -22,7 +22,7 @@ uploadArchives {
             repository url: "file://${repos.absolutePath}"
             pom.version = '1.0.0'
             pom.groupId = 'jp.yokomark.widget'
-            pom.artifactId = 'AutoValidationEditText'
+            pom.artifactId = 'LicenseCreditView'
         }
     }
 }
