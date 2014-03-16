@@ -3,6 +3,32 @@ LicenseCreditView
 
 Utility view for creating a simple credit for acknowledgement of the library license.
 
+## Usage
+
+Put a view, and add credits by java program.
+
+```xml
+<jp.yokomark.widget.license.LicenseCreditView
+    android:id="@+id/list_credits"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+```
+
+```java
+public class MainActivity extends ActionBarActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        LicenseCreditView credits = (LicenseCreditView) findViewById(R.id.list_credits);
+        credits.addCredit(new CreditEntry("AutoValidationEditText", "KeithYokoma", 2014, CreditEntry.LicenseType.APACHE_V2));
+        credits.addCredit(new CreditEntry("Proton", "hnakagawa", 2011, CreditEntry.LicenseType.APACHE_V2));
+        credits.addCredit(new CreditEntry("Picasso", "Square, Inc.", 2013, CreditEntry.LicenseType.APACHE_V2));
+    }
+}
+
+```
+
 ## Download
 
 Via gradle
