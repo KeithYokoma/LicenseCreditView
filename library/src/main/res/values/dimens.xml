@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_label_library_name">18sp</dimen>
+    <dimen name="margin_label_library_name">16dp</dimen>
+    <dimen name="text_size_label_license_header">16sp</dimen>
+    <dimen name="margin_label_license_header">16dp</dimen>
+    <dimen name="text_size_label_license_body">14sp</dimen>
+    <dimen name="divider_height_license_credits">16dp</dimen>
+</resources>
