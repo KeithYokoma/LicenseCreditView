@@ -3,6 +3,8 @@ package jp.yokomark.widget.license;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
+
 /**
  * @author yokomakukeishin
  * @since 2014/03/15
@@ -69,25 +71,11 @@ public class CreditEntry implements Parcelable {
         return mType;
     }
 
-    public static enum LicenseType {
-        APACHE_V2(R.string.license_header_apache_v2, R.string.license_content_apache_v2),
-        MIT(R.string.license_header_mit, R.string.license_content_mit),
-        BSD_V2(R.string.license_header_bsd_v2, R.string.license_content_bsd_v2);
+    public static interface LicenseType extends Serializable {
 
-        private final int mHeaderResource;
-        private final int mBodyResource;
+        public int getHeaderResource();
 
-        private LicenseType(int resource, int resource1) {
-            mHeaderResource = resource;
-            mBodyResource = resource1;
-        }
+        public int getBodyResource();
 
-        public int getHeaderResource() {
-            return mHeaderResource;
-        }
-
-        public int getBodyResource() {
-            return mBodyResource;
-        }
     }
 }

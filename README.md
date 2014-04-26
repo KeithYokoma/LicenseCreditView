@@ -5,6 +5,8 @@ Utility view for creating a simple credit for acknowledgement of the library lic
 
 ## Usage
 
+### Basic Usage
+
 Put a view, and add credits by java program.
 
 ```xml
@@ -21,10 +23,35 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LicenseCreditView credits = (LicenseCreditView) findViewById(R.id.list_credits);
-        credits.addCredit(new CreditEntry("AutoValidationEditText", "KeithYokoma", 2014, CreditEntry.LicenseType.APACHE_V2));
-        credits.addCredit(new CreditEntry("Proton", "hnakagawa", 2011, CreditEntry.LicenseType.APACHE_V2));
-        credits.addCredit(new CreditEntry("Picasso", "Square, Inc.", 2013, CreditEntry.LicenseType.APACHE_V2));
+        credits.addCredit(new CreditEntry("AutoValidationEditText", "KeithYokoma", 2014, OpenSourceLicense.APACHE_V2));
+        credits.addCredit(new CreditEntry("Proton", "hnakagawa", 2011, OpenSourceLicense.APACHE_V2));
+        credits.addCredit(new CreditEntry("Picasso", "Square, Inc.", 2013, OpenSourceLicense.APACHE_V2));
     }
+}
+
+```
+
+### Create Custom License
+
+You can create custom license.
+
+``` java
+public MyLicense implements CreditEntry.LicenseType {
+
+    // Must be `Serializable`!
+    private final int mHeaderResource = R.string.my_license_header;
+    private final int mBodyResource = R.string.my_license_body;
+
+    @Override
+    public int getHeaderResource() {
+        return mHeaderResource;
+    }
+
+    @Override
+    public int getBodyResource() {
+        return mBodyResource;
+    }
+
 }
 
 ```
