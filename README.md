@@ -44,7 +44,7 @@ repositories {
 }
 android {
     dependencies {
-        compile 'jp.yokomark.widget:LicenseCreditView:1.0.0'
+        compile 'com.github.keithyokoma:LicenseCreditView:1.0.0'
     }
 }
 ```
