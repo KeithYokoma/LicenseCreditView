@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="test_license_mock_header">since %1$s Copyright %2$s</string>
+    <string name="test_license_mock_content">This is my license!</string>
+
+</resources>
